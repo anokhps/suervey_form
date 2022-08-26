@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="title">developersBootCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+    <form id="survey-form" action="https://register-demo.freecodecamp.org">
+        <fieldset>
+            <label id="name-label">Name <input id="name" type="text" name="fullname" placeholder="Enter your name"
+                    required /></label>
+            <label id="email-label">Email <input id="email" type="email" name="mail" placeholder="Enter yor email"
+                    required /></label>
+            <label id="number-label">Age <input id="number" type="number" min="10" max="100" name="age"
+                    placeholder="age" required /></label>
+        </fieldset>
+        <fieldset>
+            <label>Which option best describes your current role? <select id="dropdown">
+                    <option value="">select current role</option>
+                    <option value="1">Student</option>
+                    <option value="2">Full Time job </option>
+                    <option value="3">Other</option>
+
+                </select></label>
+        </fieldset>
+
+        <fieldset>
+            <label>Would you recommend freeCodeCamp to a friend?</label>
+            <label><input class="inline" type="radio" name="decision" value="5" />Definitely</label>
+            <label><input class="inline" type="radio" name="decision" value="6" />Maybe</label>
+            <label><input class="inline" type="radio" name="decision" value="7" />Note sure</label>
+        </fieldset>
+        <fieldset>
+            <label>What would you like to see improved? (Check all that apply)</label>
+            <label><input class="inline" type="checkbox" value="10" />Front-end projects</label>
+            <label><input class="inline" type="checkbox" value="11" />Back-end projects</label>
+            <label><input class="inline" type="checkbox" value="12" />Data visualization</label>
+            <label><input class="inline" type="checkbox" value="13" />Data structure and algorithm</label>
+
+            <label>Any comments or suggestions?
+                <textarea name="bio" rows="3" cols="30" placeholder="Enter your comment here"></textarea>
+            </label>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit" />
+    </form>
+
+
+
+
+</body>
+
+</html>
